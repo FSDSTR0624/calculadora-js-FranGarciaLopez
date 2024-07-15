@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="style.css">
+          <script src="index.js" defer></script>
+          
+          <title>Calculator</title>
+</head>
+<body>
+          <main>
+                    <div id="calculator">
+                              <div id="display">
+                                        <input type="text" class="display" id="displayInput" disabled>
+                              </div>
+                              <div id="keys">
+                                        <button class="symbol-key" onclick="clearDisplay()">C</button>
+                                        <button class="symbol-key" onclick="displayValue('!')">!</button>
+                                        <button class="symbol-key" onclick="displayValue('^')">^</button>
+                                        <button class="symbol-key" onclick="deleteLast()">←</button>
+                                        <button class="symbol-key" onclick="displayValue('ln(')")>ln</button>
+                                        <button class="symbol-key" onclick="displayValue('%')">%</button>
+                                        <button class="symbol-key" onclick="displayValue('√(')")>√</button>
+                                        <button class="symbol-key" onclick="displayValue('/')">÷</button>
+                                        <button class="key" onclick="displayValue('7')">7</button>
+                                        <button class="key" onclick="displayValue('8')">8</button>
+                                        <button class="key" onclick="displayValue('9')">9</button>
+                                        <button class="symbol-key" onclick="displayValue('*')">*</button>
+                                        <button class="key" onclick="displayValue('4')">4</button>
+                                        <button class="key" onclick="displayValue('5')">5</button>
+                                        <button class="key" onclick="displayValue('6')">6</button>
+                                        <button class="symbol-key" onclick="displayValue('-')">-</button>
+                                        <button class="key" onclick="displayValue('1')">1</button>
+                                        <button class="key" onclick="displayValue('2')">2</button>
+                                        <button class="key" onclick="displayValue('3')">3</button>
+                                        <button class="key" onclick="displayValue('0')">0</button>
+                                        <button class="key" onclick="displayValue('.')">.</button>
+                                        <button class="key" onclick="calculate()">=</button>
+                                        <button class="symbol-key" onclick="displayValue('+')">+</button>
+                              </div>
+                    </div> 
+          </main>
+          
+</body>
+</html>
